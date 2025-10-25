@@ -9,77 +9,82 @@
 </head>
 
 <body>
-    <div class="flex md:flex-row bg-gray-400 h-15 w-full items-center justify-center gap-3  ">
-        <h1 class="text-sm font-semibold text-center">Install our app for better experience!</h1>
-        <button class="text-white bg-orange-600 py-2 px-4 font-semibold rounded-md">INSTALL</button>
-    </div>
+    <!-- ✅ Banner (visible only on small & medium, hidden on large) -->
+<div class="flex md:flex-row lg:hidden bg-gray-400 h-[50px] w-full items-center justify-center gap-3 fixed top-0 left-0 z-50">
+  <h1 class="text-sm font-semibold text-center">
+    Install our app for better experience!
+  </h1>
+  <button class="text-white bg-orange-600 py-2 px-4 font-semibold rounded-md">
+    INSTALL
+  </button>
+</div>
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full h-[122px] shadow-lg flex justify-between items-center px-6 bg-white z-50">
+<!-- ✅ Navbar (adjusts position depending on screen size) -->
+<nav class="fixed left-0 w-full h-[122px] shadow-lg flex justify-between items-center px-6 bg-white z-40 top-[50px] lg:top-0">
 
-        <!-- Left Logos -->
-        <div class="flex items-center gap-5">
-            <img class="h-14" src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="">
-            <img class="h-14" src="./panda1.png" alt="logo2">
-        </div>
+  <!-- Left Logos -->
+  <div class="flex items-center gap-5">
+    <img class="h-14"
+      src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg"
+      alt="">
+    <img class="h-14" src="./panda1.png" alt="logo2">
+  </div>
 
-        <!-- Hamburger Button (visible on small & medium screens) -->
-        <div class="md:hidden">
-            <button id="menu-btn" class="text-3xl focus:outline-none">
-                ☰
-            </button>
-        </div>
+  <!-- Hamburger Button (visible on small & medium screens) -->
+  <div class="md:hidden">
+    <button id="menu-btn" class="text-3xl focus:outline-none">☰</button>
+  </div>
 
-        <!-- Menu -->
-        <div id="menu"
-            class="hidden md:flex flex-col md:flex-row gap-5 absolute md:static top-[122px] left-0 w-full md:w-auto bg-white md:bg-transparent text-center md:text-left shadow-md md:shadow-none transition-all duration-300 ease-in-out">
-            <ul
-                class="flex flex-col md:flex-row gap-8 md:gap-12 p-5 md:p-0 justify-center items-center md:justify-between md:w-full">
+  <!-- Menu -->
+  <div id="menu"
+    class="hidden md:flex flex-col md:flex-row gap-5 absolute md:static top-[122px] left-0 w-full md:w-auto bg-white md:bg-transparent text-center md:text-left shadow-md md:shadow-none transition-all duration-300 ease-in-out">
+    <ul
+      class="flex flex-col md:flex-row gap-8 md:gap-12 p-5 md:p-0 justify-center items-center md:justify-between md:w-full">
 
-                <li><a href="index.html" class="text-green-400 font-semibold">Home</a></li>
-                <li><a href="about.html" class="hover:text-green-400 font-semibold">About</a></li>
-                <li><a href="contact.html" class="hover:text-green-400 font-semibold">Contact</a></li>
+      <li><a href="index.html" class="text-green-400 font-semibold">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-400 font-semibold">About</a></li>
+      <li><a href="contact.html" class="hover:text-green-400 font-semibold">Contact</a></li>
 
-                <!-- Login + Icon -->
-                <div class="flex gap-2 items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
-                        fill="#434343">
-                        <path
-                            d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
-                    </svg>
-                    <li><a href="login.html" class="hover:text-green-400 font-semibold">Login</a></li>
-                </div>
+      <!-- Login + Icon -->
+      <div class="flex gap-2 items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+          fill="#434343">
+          <path
+            d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+        </svg>
+        <li><a href="login.html" class="hover:text-green-400 font-semibold">Login</a></li>
+      </div>
 
-                <!-- Report Button -->
-                <button
-                    class="flex items-center gap-2 bg-orange-500 text-white rounded-md py-3 px-5 hover:bg-orange-950 transition-colors duration-200">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 -960 960 960"
-                        fill="currentColor">
-                        <path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 
-          17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 
-          420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 
-          0-113 47t-47 113v280Z" />
-                    </svg>
-                    <h1 class="font-bold text-lg md:text-base">REPORT A BEAR</h1>
-                </button>
-            </ul>
-        </div>
-    </nav>
+      <!-- Report Button -->
+      <button
+        class="flex items-center gap-2 bg-orange-500 text-white rounded-md py-3 px-5 hover:bg-orange-950 transition-colors duration-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 -960 960 960"
+          fill="currentColor">
+          <path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 
+      17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 
+      420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 
+      0-113 47t-47 113v280Z" />
+        </svg>
+          <a href="report.html" class="font-bold text-lg md:text-base">REPORT A BEAR</a>
+      </button>
+    </ul>
+  </div>
+</nav>
 
-    <!-- Body padding -->
-    <div class="pt-[130px]"></div>
+<!-- ✅ Responsive body padding -->
+<div class="pt-[180px] lg:pt-[130px]"></div>
 
-    <!-- Toggle Script -->
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
+<!-- Toggle Script -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
     <section>
-        <div class="flex flex-col justify-around gap-9 p-7 md:flex-row md:w-full">
+        <div class="flex flex-col h-100 justify-around items-center gap-9 p-7 md:flex-row md:w-full">
             <h1 class="font-extrabold text-6xl w-90 text-gray-700">About <br> bear alert</h1>
             <p class="w-110 text-gray-400">Bears in Mind and Foundation for Bears created 'Bear Alert' to monitor and
                 help improve the lives of captive bears suffering in poor conditions.</p>
@@ -115,7 +120,7 @@
                 src="https://www.bearalert.org/static/fbf09723f786a14cddf483c67cdd2059/7e6e7/Malysh_in_Zaporhyzhya_18859db7d7.webp"
                 alt="">
         </div>
-        <div class="p-7 h-auto justify-center items-center">
+        <div class="p-7 h-auto justify-center items-center w-200">
             <h1 class="text-white text-4xl pt-5 pb-4">Success stories - an example</h1>
             <div class="h-[2px] w-30 bg-orange-500"></div>
             <div class="flex mt-4 items-center text-white gap-3">
