@@ -10,142 +10,139 @@
 
 <body>
   <!-- ✅ Banner (visible only on small & medium, hidden on large) -->
- <div class="overflow-x-hidden max-w-[100vw]">
+  <div class="overflow-x-hidden max-w-[100vw]">
 
-  <!-- ✅ Top Banner (Mobile Only) -->
-  <div
-    class="flex md:flex-row lg:hidden bg-[#f1eae8] overflow-x-hidden max-w-[100vw] w-full h-[50px] items-center justify-center gap-3 fixed top-0 left-0 z-50">
-    <h1 class="text-md text-center">Install our app for better experience!</h1>
-    <button class="text-white text-md bg-[#ec771e] px-5 py-3 font-semibold rounded-md">INSTALL</button>
-  </div>
-
-  <!-- ✅ Fixed Navbar -->
-  <nav
-    class="fixed left-0 overflow-x-hidden max-w-[100vw] w-full h-[122px] shadow-lg flex justify-between md:justify-between items-center bg-white z-40 top-[50px] lg:top-0 px-5 md:px-14">
-
-    <!-- ✅ Left Logos -->
-    <div class="flex items-center gap-5">
-      <img class="h-16" src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="">
-      <img class="h-16" src="./panda1.png" alt="logo2">
+    <!-- ✅ Top Banner (Mobile Only) -->
+    <div
+      class="flex md:flex-row lg:hidden bg-[#f1eae8] overflow-x-hidden max-w-[100vw] w-full h-[50px] items-center justify-center gap-3 fixed top-0 left-0 z-50">
+      <h1 class="text-md text-center">Install our app for better experience!</h1>
+      <button class="text-white text-md bg-[#ec771e] px-5 py-3 font-semibold rounded-md">INSTALL</button>
     </div>
 
-    <!-- ✅ Hamburger (Mobile Only) -->
-    <div class="md:hidden">
-      <button id="menu-btn" class="text-2xl focus:outline-none font-semibold">
-        Menu &nbsp;&nbsp; ☰
-      </button>
-    </div>
+    <!-- ✅ Fixed Navbar -->
+    <nav
+      class="fixed left-0 overflow-x-hidden max-w-[100vw] w-full h-[122px] shadow-lg flex justify-between md:justify-between items-center bg-white z-40 top-[50px] lg:top-0 px-5 md:px-14">
 
-    <!-- ✅ Menu -->
-    <div id="menu"
-      class="hidden md:flex flex-col md:flex-row gap-5 fixed md:static top-[122px] left-0 w-full md:w-auto bg-white md:bg-transparent text-center md:text-left shadow-md md:shadow-none transition-all duration-300 ease-in-out z-40 md:justify-end">
-      <ul
-        class="flex flex-col md:flex-row gap-8 md:gap-12 p-5 md:p-0 justify-center items-center md:justify-end md:w-full">
+      <!-- ✅ Left Logos -->
+      <div class="flex items-center gap-5">
+        <img class="h-16" src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="">
+        <img class="h-16" src="./panda1.png" alt="logo2">
+      </div>
 
-        <!-- Home -->
-        <li>
-          <a href="index.html" class="nav-link font-semibold text-base text-gray-800 hover:text-green-400">Home</a>
-        </li>
+      <!-- ✅ Hamburger (Mobile Only) -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-2xl focus:outline-none font-semibold">
+          Menu &nbsp;&nbsp; ☰
+        </button>
+      </div>
 
-        <!-- About -->
-        <li>
-          <a href="about.html" class="nav-link font-semibold text-base text-gray-800 hover:text-green-400">About</a>
-        </li>
+      <!-- ✅ Menu -->
+      <div id="menu"
+        class="hidden md:flex flex-col md:flex-row gap-5 fixed md:static top-[122px] left-0 w-full md:w-auto bg-white md:bg-transparent text-center md:text-left shadow-md md:shadow-none transition-all duration-300 ease-in-out z-40 md:justify-end">
+        <ul
+          class="flex flex-col md:flex-row gap-8 md:gap-12 p-5 md:p-0 justify-center items-center md:justify-end md:w-full">
 
-        <!-- Contact -->
-        <li>
-          <a href="contact.html" class="nav-link font-semibold text-base text-gray-800 hover:text-green-400">Contact</a>
-        </li>
+          <!-- Home -->
+          <li>
+            <a href="index.html" class="nav-link font-semibold text-base text-gray-800 hover:text-[#d5faa6]">Home</a>
+          </li>
 
-        <!-- Login + Icon -->
-        <div class="flex gap-2 items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#434343">
-            <path
-              d="M480-480q-66 0-113-47t-47-113q0-66 
+          <!-- About -->
+          <li>
+            <a href="about.html" class="nav-link font-semibold text-base text-gray-800 hover:text-[#d5faa6]">About</a>
+          </li>
+
+          <!-- Contact -->
+          <li>
+            <a href="contact.html"
+              class="nav-link font-semibold text-base text-gray-800 hover:text-[#d5faa6]">Contact</a>
+          </li>
+
+          <!-- Login + Icon -->
+          <div class="flex gap-2 items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#434343">
+              <path d="M480-480q-66 0-113-47t-47-113q0-66 
               47-113t113-47q66 0 113 47t47 113q0 
               66-47 113t-113 47ZM160-160v-112q0-34 
               17.5-62.5T224-378q62-31 126-46.5T480-440q66 
               0 130 15.5T736-378q29 15 46.5 
               43.5T800-272v112H160Z" />
-          </svg>
-          <a href="login.html" class="nav-link font-semibold text-base text-gray-800 hover:text-green-400">Login</a>
-        </div>
+            </svg>
+            <a href="login.html" class="nav-link font-semibold text-base text-gray-800 hover:text-[#d5faa6]">Login</a>
+          </div>
 
-        <!-- Report Button -->
-        <button
-          class="flex items-center gap-2 bg-[#ec771e] text-white rounded-md py-3 px-5 hover:bg-orange-950 transition-colors duration-200">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 -960 960 960" fill="currentColor">
-            <path
-              d="M160-200v-80h80v-280q0-83 
+          <!-- Report Button -->
+          <button
+            class="flex items-center gap-2 bg-[#ec771e] text-white rounded-md py-3 px-5 hover:bg-orange-950 transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 -960 960 960" fill="currentColor">
+              <path d="M160-200v-80h80v-280q0-83 
               50-147.5T420-792v-28q0-25 
               17.5-42.5T480-880q25 0 
               42.5 17.5T540-820v28q80 20 
               130 84.5T720-560v280h80v80H160Z" />
-          </svg>
-          <a href="report.html" class="nav-link font-bold text-lg md:text-base">REPORT A BEAR</a>
-        </button>
-      </ul>
-    </div>
+            </svg>
+            <a href="report.html" class="nav-link font-bold text-lg md:text-base">REPORT A BEAR</a>
+          </button>
+        </ul>
+      </div>
 
-  </nav>
+    </nav>
 
-  <!-- ✅ Space below Navbar -->
-  <div class="pt-[140px]"></div>
+    <!-- ✅ Space below Navbar -->
+    <div class="pt-[140px]"></div>
 
-  <!-- ✅ Active Link Highlight -->
-  <script>
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("text-green-400");
-      } else {
-        link.classList.remove("text-green-400");
-      }
-    });
-  </script>
+    <!-- ✅ Active Link Highlight -->
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("text-green-400");
+        } else {
+          link.classList.remove("text-green-400");
+        }
+      });
+    </script>
 
-  <!-- ✅ Toggle Script -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      document.body.classList.toggle('overflow-hidden');
-    });
-  </script>
+    <!-- ✅ Toggle Script -->
+    <script>
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        document.body.classList.toggle('overflow-hidden');
+      });
+    </script>
 
-  <!-- ✅ Smooth Animation -->
-  <style>
-    @media (max-width: 767px) {
-      #menu {
-        max-height: 0;
-        overflow: hidden;
-      }
+    <!-- ✅ Smooth Animation -->
+    <style>
+      @media (max-width: 767px) {
+        #menu {
+          max-height: 0;
+          overflow: hidden;
+        }
 
-      #menu:not(.hidden) {
-        display: flex !important;
-        animation: slideDown 0.3s ease-out forwards;
-        max-height: 100vh;
-      }
-    }
-
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
+        #menu:not(.hidden) {
+          display: flex !important;
+          animation: slideDown 0.3s ease-out forwards;
+          max-height: 100vh;
+        }
       }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
-</div>
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
 
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </div>
   <main>
-
     <div class="relative h-screen bg-cover bg-center flex flex-col items-center pt-10 text-white"
       style="background-image: url('./bgimg5.jpg');">
       <div class="relative z-10 px-6">
@@ -154,9 +151,7 @@
         </h1>
       </div>
     </div>
-
   </main>
-
   <section class="flex flex-col md:flex-row justify-between h-auto p-13 m-7">
     <div class=" p-9">
       <div class="font-bold text-4xl text-[#47433c] pb-3">Get in touch</div>
@@ -165,26 +160,29 @@
       <p class="text-gray-500 pb-2">Grebbeweg 111</p>
       <p class="text-gray-500 pb-2">3911 AV Rhenen</p>
       <p class="text-gray-500 pb-2">The Netherlands</p>
-      <p class="text-[#a9cc9c] text-md font-extrabold pb-2">+31 317 650 220</p>
-      <p class="text-[#a9cc9c] text-md font-extrabold pb-2">www.bearsinmind.org</p>
-      <p class="text-[#a9cc9c] text-md font-extrabold pb-4">info@bearsinmind.org</p>
+      <p class="text-[#97BE0D] text-md font-extrabold pb-2">+31 317 650 220</p>
+      <p class="text-[#97BE0D] text-md font-extrabold pb-2">www.bearsinmind.org</p>
+      <p class="text-[#97BE0D] text-md font-extrabold pb-4">info@bearsinmind.org</p>
       <h1 class="font-bold text-[#47433c] pb-2">Foundation for Bears</h1>
       <p class="text-gray-500 pb-2">STIFTUNG für Bären</p>
       <p class="text-gray-500 pb-2">Dudestadter Allee 49 37339</p>
       <p class="text-gray-500 pb-2">Leinefelde-Worbis</p>
       <p class="text-gray-500 pb-2">Germany</p>
-      <p class="text-[#a9cc9c] text-md font-extrabold pb-2">+49 36074 2009-0</p>
-      <p class="text-[#a9cc9c] text-md font-extrabold pb-2">www.baer.de</p>
-      <p class="text-[#a9cc9c] text-md font-extrabold pb-2">stiftung@baer.de</p>
+      <p class="text-[#97BE0D] text-md font-extrabold pb-2">+49 36074 2009-0</p>
+      <p class="text-[#97BE0D] text-md font-extrabold pb-2">www.baer.de</p>
+      <p class="text-[#97BE0D] text-md font-bold pb-2">stiftung@baer.de</p>
     </div>
-    <div>
-      <div class="mb-20">
-        <label class=" text-black font-bold ">Name*</label>
-        <input type="" class="p-4 border border-gray-300 gap-4 " placeholder="name">
-        <label class=" text-black font-bold mb-2 ">Last Name*</label>
-        <input type="" class="p-4 border border-gray-300 " placeholder="Last name">
+    <div class="pt-10">
+      <div class="flex flex-row gap-9">
+        <div class="flex flex-col">
+          <label class=" text-black font-bold mb-2">Name*</label>
+          <input type="" class="p-4 border border-gray-300 gap-4 " placeholder="name">
+        </div>
+        <div class="flex flex-col">
+          <label class=" text-black font-bold mb-2 ">Last Name*</label>
+          <input type="" class="p-4 border border-gray-300 " placeholder="Last name">
+        </div>
       </div>
-
       <div class="flex flex-col pt-4"> <label class=" text-black font-bold mb-2 pt-4"> Email*</label> <input type=""
           class="p-4 border border-gray-300 gap-4" placeholder="Fill in your Email "> <label
           class=" text-black font-bold mb-2 pt-5"> Subject*</label> <input type=""
@@ -194,47 +192,44 @@
           class="bg-orange-400 text-white py-3 px-4 w-60 font-bold mt-5">SEND MESSAGE</button> </div>
     </div>
   </section>
-  <footer class="flex flex-col sm:flex-row lg:flex-row flex-wrap justify-evenly items-center bg-[#4a4a50] p-8 sm:p-10 lg:p-20 text-white gap-10">
+  <footer
+    class="flex flex-col sm:flex-row lg:flex-row flex-wrap justify-evenly items-center bg-[#4a4a50] p-8 sm:p-10 lg:p-20 text-white gap-10">
 
-  <!-- 🐻 Logo Section -->
-  <div class="flex flex-col items-center md:items-start text-center md:text-left">
-    <div class="flex gap-6 mb-6">
-      <img
-        class="h-16 w-16 rounded-full bg-white p-2"
-        src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg"
-        alt="Bear Logo">
-      <img
-        class="h-16 w-16 rounded-full bg-white p-2"
-        src="./panda1.png"
-        alt="Panda Logo">
+    <!-- 🐻 Logo Section -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="flex gap-6 mb-6">
+        <img class="h-16 w-16 rounded-full bg-white p-2"
+          src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="Bear Logo">
+        <img class="h-16 w-16 rounded-full bg-white p-2" src="./panda1.png" alt="Panda Logo">
+      </div>
+
+      <p class="text-white text-sm sm:text-base max-w-[300px]">
+        Bear Alert is developed by <span class="font-semibold">bearsinmind.org</span> & <span
+          class="font-semibold">baer.de</span>
+        to keep track of the many captive bears.
+      </p>
     </div>
 
-    <p class="text-white text-sm sm:text-base max-w-[300px]">
-      Bear Alert is developed by <span class="font-semibold">bearsinmind.org</span> & <span class="font-semibold">baer.de</span>  
-      to keep track of the many captive bears.
-    </p>
-  </div>
+    <!-- 📄 Links Section -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
 
-  <!-- 📄 Links Section -->
-  <div class="flex flex-col items-center md:items-start text-center md:text-left">
-   
-    <ul class="flex flex-col">
-       <h1 class="font-semibold text-xl mb-1">Report a Bear</h1>
-      <li><a href="./about.html" class="p-1 font-semibold text-xl mb-1">About</a></li>
-      <li><a href="./contact.html" class="p-1 font-semibold text-xl mb-1">Contact</a></li>
-      <li><a href="./login.html" class="p-1 font-semibold text-xl mb-1">Login</a></li>
-    </ul>
-  </div>
+      <ul class="flex flex-col">
+        <h1 class="font-semibold text-xl mb-1">Report a Bear</h1>
+        <li><a href="./about.html" class="p-1 font-semibold text-xl mb-1">About</a></li>
+        <li><a href="./contact.html" class="p-1 font-semibold text-xl mb-1">Contact</a></li>
+        <li><a href="./login.html" class="p-1 font-semibold text-xl mb-1">Login</a></li>
+      </ul>
+    </div>
 
-</footer>
-<section class=" text-[#4a4a50] h-30 py-5">
+  </footer>
+  <section class=" text-[#4a4a50] h-30 py-5">
     <div class="flex flex-col md:flex-row justify-evenly items-center">
       <div class="flex"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
           fill="#434343">
           <path
             d="M400-320h160q17 0 28.5-11.5T600-360v-80h-80v40h-80v-160h80v40h80v-80q0-17-11.5-28.5T560-640H400q-17 0-28.5 11.5T360-600v240q0 17 11.5 28.5T400-320Zm80 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
         </svg>
-        <h1 >2025 Bear alert part of bearsinmind.org & baer.de <br> Webdesign:bureau Berg</h1>
+        <h1>2025 Bear alert part of bearsinmind.org & baer.de <br> Webdesign:bureau Berg</h1>
       </div>
       <div class="pt-3"> Privacy statement | Terms and conditions </div>
     </div>
