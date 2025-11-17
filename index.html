@@ -58,8 +58,7 @@
         <!-- Login + Icon -->
         <div class="flex gap-2 items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px" fill="#434343">
-            <path
-              d="M480-480q-66 0-113-47t-47-113q0-66 
+            <path d="M480-480q-66 0-113-47t-47-113q0-66 
               47-113t113-47q66 0 113 47t47 113q0 
               66-47 113t-113 47ZM160-160v-112q0-34 
               17.5-62.5T224-378q62-31 126-46.5T480-440q66 
@@ -73,14 +72,13 @@
         <button
           class="flex items-center gap-2 bg-[#ec771e] text-white rounded-md py-3 px-5 hover:bg-orange-950 transition-colors duration-200">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 -960 960 960" fill="currentColor">
-            <path
-              d="M160-200v-80h80v-280q0-83 
+            <path d="M160-200v-80h80v-280q0-83 
               50-147.5T420-792v-28q0-25 
               17.5-42.5T480-880q25 0 
               42.5 17.5T540-820v28q80 20 
               130 84.5T720-560v280h80v80H160Z" />
           </svg>
-          <a href="report.html" class="nav-link font-bold text-lg md:text-base">REPORT A BEAR</a>
+          <a href="report.html" class="nav-link font-bold text-white text-lg md:text-base">REPORT A BEAR</a>
         </button>
       </ul>
     </div>
@@ -91,17 +89,17 @@
   <div class="pt-[140px]"></div>
 
   <!-- ✅ Active Link Highlight -->
-  <script>
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("text-green-400");
-      } else {
-        link.classList.remove("text-green-400");
-      }
-    });
-  </script>
+ <script>
+      const currentPage = window.location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("text-green-400");
+        } else {
+          link.classList.remove("text-green-400");
+        }
+      });
+    </script>
 
   <!-- ✅ Toggle Script -->
   <script>
@@ -150,13 +148,13 @@
     <div class="absolute inset-0 bg-black opacity-15"></div>
 
     <!-- Text content (on top of image) -->
-    <div class="relative z-10 p-4 items-center justify-center text-center py-7">
+    <div class="relative z-10 p-5 items-center justify-center text-center py-7">
       <h1
         class="font-bold leading-[1.25] h-auto px-4 sm:px-10 md:px-18 max-w-[90%] sm:max-w-[65%] lg:max-w-[95%] text-4xl sm:text-5xl md:text-6xl lg:text-7xl pt-10 md:pt-16 mx-auto text-center">
         Help rescue captive bears in need
       </h1>
 
-      <p class="md:text-2xl font-semibold pt-3 w-[80%] xl:w-[60%] mx-auto">
+      <p class="md:text-sm font-bold pt-3 w-[80%] xl:w-[60%] mx-auto">
         Your Support Can Make a Difference in the Life of a Captive Bear
       </p>
     </div>
@@ -185,83 +183,76 @@
     <img class="h-60 sm:h-72 md:h-80 lg:h-96 w-auto mb-6 md:mb-0 hidden sm:block rounded-xl object-cover"
       src="https://www.bearalert.org/static/cf49c5724d0d3865f10ddee64ae41570/0110e/Home_Bear_Alert_1a19a99959.webp"
       alt="sidebar image" />
-
   </div>
 </section>
 
- <section class="w-auto flex flex-col mt-15 pb-3 md:flex-row justify-items-end bg-[#47433c]">
-    <div class="bg-stone-500 "> <img class="h-[41rem] w-300"
-        src="https://www.bearalert.org/static/fbf09723f786a14cddf483c67cdd2059/84d3c/Malysh_in_Zaporhyzhya_18859db7d7.webp"
-        alt="">
-    </div>
-    <div class="p-7 px-10 justify-start items-center">
-      <h1 class="text-white text-2xl pt-5 pb-4">Success stories - an example</h1>
-      <div class="h-[2px] w-30 bg-orange-500"></div>
-      <div class="flex mt-4 items-center text-white gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 " viewBox="0 -960 960 960" fill="#97BE0D">
-            <path
-              d="M160-200v-80h80v-280q0-83 
+<section class="w-auto flex flex-col mt-15 pb-3 md:flex-row justify-items-end bg-[#47433c]">
+  <div class="bg-stone-500 "> <img class="h-[55rem] w-300"
+      src="https://www.bearalert.org/static/fb000e5f053f44f309477dfbff643e7c/7e6e7/P1070673_e80d1657bc.webp"
+      alt="">
+  </div>
+  <div class="p-15 md:p-20 justify-start items-center">
+    <h1 class="text-white text-3xl font-Montserrat, sans-serif; w-90 pt-5 pb-4">Bear Alerts in progress - an example</h1>
+    <div class="h-[1px] w-30 bg-orange-500"></div>
+    <div class="flex mt-4 items-center text-white gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 " viewBox="0 -960 960 960" fill="#97BE0D">
+        <path d="M160-200v-80h80v-280q0-83 
               50-147.5T420-792v-28q0-25 
               17.5-42.5T480-880q25 0 
               42.5 17.5T540-820v28q80 20 
               130 84.5T720-560v280h80v80H160Z" />
-          </svg>
-        <div class="text-white text-2xl">Bear in a cage in Bosnia</div>
-      </div>
-      <br>
-      <div class="text-white h-full p-3">
-        <p><b>Location</b>: Bosnia Herzegovina
+      </svg>
+      <div class="text-white text-2xl">Bear in a cage in Bosnia</div>
+    </div>
+    <br>
+    <div class="text-white h-full p-3">
+      <p><b>Location</b>: Bosnia Herzegovina
 
-
-          <br> <br>
-        </p>
-
+        <br> <br>
+      </p>
       <p>Tourist Complex “Eko Fis”</p>
       <br>
       <p>Šišava, Municipality of Travnik</p>
       <br>
- <p><b>Species:</b> Brown bear (Ursus arctos arctos)
-        </p>
-        <br>
-        <p><b>Sex</b>: Male named 'Malysh
-        </p>
-        <br>
-        <p><b>Owner</b>: State
-        </p>
-        <br>
-        <p><b>Condition</b>: Very poor enclosure, reasonable health
-        </p>
-        <br>
-        <p><b>Current status</b>: Malysh and female Ljalja were both rescued in October 2021 and brought to The Bear
-          Forest in The Netherlands by Bears in Mind.
-        </p>
-        <br>
-      </div>
+      <p><b>Species:</b> Brown bear (Ursus arctos arctos)
+      </p>
+      <br>
+      <p><b>Sex</b>: Male named 'Malysh
+      </p>
+      <br>
+      <p><b>Owner</b>: State
+      </p>
+      <br>
+      <p><b>Condition</b>: Very poor enclosure, reasonable health
+      </p>
+      <br>
+      <p><b>Current status</b>: Malysh and female Ljalja were both rescued in October 2021 and brought to The Bear
+        Forest in The Netherlands by Bears in Mind.
+      </p>
+      <br>
     </div>
-  </section>
+  </div>
+</section>
 <div
   class="flex flex-col md:flex-row mt-15 justify-evenly items-center sm:items-start  md:px-4 md:justify-center xl:justify-around gap-6 p-20 w-auto">
   <div>
     <h1 class="font-bold text-3xl w-100 pb-3">Help us give captive bears a second chance!</h1>
     <h1 class="font-semibold w-90 text-2xl">This is why you should report a bear in need:</h1>
   </div>
-  <div class="text-[#47433c] p-7 mx-8 py-2 w-110"> Bears are iconic animals, part of our natural world, but they are facing
-    many
-    challenges. Habitat destruction and loss of suitable space to live, human-caused mortality like illegal hunting,
+  <div class="text-[#47433c] p-7 font-normal mx-8 py-2 w-130"> Bears are iconic animals, part of our natural world, but they are
+    facing many challenges. Habitat destruction and loss of suitable space to live, human-caused mortality like illegal hunting,
     trade in bear parts for traditional medicines, but also keeping bears as pets or in private 'zoos'. Cubs are
     illegally traded and end up \behind bars, living their lives under unsuitable and in miserable conditions. By
     reporting any captive bear that you come across, you can help us to help them. Your report will support us to take
     the appropriate action and prevent other bears from ending up in similar conditions. </div>
 </div>
 <section class="flex flex-col lg:flex-row bg-[#f1eae8] mt-20 justify-center items-center">
-  
+
   <!-- 🐻 Image Section -->
   <div class="order-1 lg:order-2 w-full lg:w-1/2 flex justify-center items-center">
-    <img
-      class="w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[650px] object-cover"
+    <img class="w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[650px] object-cover"
       src="https://www.bearalert.org/static/cd1f7678b53456f66089128bab06ef87/b8018/Bears_at_Kormisosh_Bulgaria_616f9d39e2.webp"
-      alt="Bears Image"
-    />
+      alt="Bears Image" />
   </div>
 
   <!-- 🧾 Text Section -->
@@ -270,15 +261,15 @@
     <div class="h-1 w-16 bg-orange-400 mb-5"></div>
 
     <p class="text-base md:text-lg leading-relaxed text-[#47433c]">
-      Bear Alert is developed by <strong>Bears in Mind</strong> &amp; <strong>Foundation for Bears</strong> 
-      to keep track of the many captive bears, often living under horrible conditions, 
+      Bear Alert is developed by <strong>Bears in Mind</strong> &amp; <strong>Foundation for Bears</strong>
+      to keep track of the many captive bears, often living under horrible conditions,
       in order to help as many individuals as possible.
     </p>
 
     <p class="text-base md:text-lg leading-relaxed pt-4 text-[#47433c]">
       Over time, both organizations gathered information on more than 850 (with some overlap) of these bears
       in captivity. Some of them have already been rescued from their miserable existence and brought to a
-      proper facility where the much-needed care and space could be offered. Others unfortunately died before 
+      proper facility where the much-needed care and space could be offered. Others unfortunately died before
       we could do anything. Some individuals vanished... but many are still waiting for a better life.
     </p>
 
@@ -291,32 +282,29 @@
 </section>
 
 
-<footer class="flex flex-col sm:flex-row lg:flex-row flex-wrap justify-evenly items-center bg-[#4a4a50] p-8 sm:p-10 lg:p-20 text-white gap-10">
+<footer
+  class="flex flex-col sm:flex-row lg:flex-row flex-wrap justify-evenly items-center bg-[#4a4a50] p-8 sm:p-10 lg:p-20 text-white gap-10">
 
   <!-- 🐻 Logo Section -->
   <div class="flex flex-col items-center md:items-start text-center md:text-left">
     <div class="flex gap-6 mb-6">
-      <img
-        class="h-16 w-16 rounded-full bg-white p-2"
-        src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg"
-        alt="Bear Logo">
-      <img
-        class="h-16 w-16 rounded-full bg-white p-2"
-        src="./panda1.png"
-        alt="Panda Logo">
+      <img class="h-16 w-16 rounded-full bg-white p-2"
+        src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="Bear Logo">
+      <img class="h-16 w-16 rounded-full bg-white p-2" src="./panda1.png" alt="Panda Logo">
     </div>
 
     <p class="text-white text-sm sm:text-base max-w-[300px]">
-      Bear Alert is developed by <span class="font-semibold">bearsinmind.org</span> & <span class="font-semibold">baer.de</span>  
+      Bear Alert is developed by <span class="font-semibold">bearsinmind.org</span> & <span
+        class="font-semibold">baer.de</span>
       to keep track of the many captive bears.
     </p>
   </div>
 
   <!-- 📄 Links Section -->
   <div class="flex flex-col items-center md:items-start text-center md:text-left">
-   
+
     <ul class="flex flex-col">
-       <h1 class="font-semibold text-xl mb-1">Report a Bear</h1>
+      <h1 class="font-semibold text-xl mb-1">Report a Bear</h1>
       <li><a href="./about.html" class="p-1 font-semibold text-xl mb-1">About</a></li>
       <li><a href="./contact.html" class="p-1 font-semibold text-xl mb-1">Contact</a></li>
       <li><a href="./login.html" class="p-1 font-semibold text-xl mb-1">Login</a></li>
