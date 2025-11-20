@@ -73,7 +73,7 @@
 
         <!-- Report Button -->
         <button
-          class="flex items-center gap-2 bg-[#ec771e] text-white rounded-md py-3 px-5 hover:bg-orange-950 transition-colors duration-200">
+          class="flex items-center gap-2 bg-[#ec771e] text-white rounded-md py-3 px-5 ">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 -960 960 960" fill="currentColor">
             <path
               d="M160-200v-80h80v-280q0-83 
@@ -160,13 +160,14 @@
       bears suffering in poor conditions.
     </div>
   </div>
-</section>
+ </section>
 
   <div>
     <img class=""
       src="https://www.bearalert.org/static/411ff421367fad4663daed6c8a19de8b/4854a/Shant_Restaurant_bear_13a4c36f09.webp"
       alt="">
   </div>
+
   <section>
     <div class="flex justify-around h-screen items-center px-9 flex-col lg:mt-15 lg:mb-15 md:flex-row">
       <div>
@@ -191,7 +192,7 @@
     </div>
   </section>
 
-  <section class="w-auto flex flex-col mt-15 pb-3 px-4 md:flex-row justify-items-end bg-[#47433c]">
+  <section class="w-auto flex flex-col mt-15 pb-3 px-4 md:flex-row justify-items-end bg-[#5A4F51]">
     <div class="bg-stone-500 "> <img class="h-[41rem] w-300"
         src="https://www.bearalert.org/static/fbf09723f786a14cddf483c67cdd2059/84d3c/Malysh_in_Zaporhyzhya_18859db7d7.webp"
         alt="">
@@ -241,6 +242,7 @@
       </div>
     </div>
   </section>
+
   <section>
     <div class=" justify-center items-center gap-6 px-10 lg:px-35 pt-20 pb-20 w-auto">
       <div class="">
@@ -265,48 +267,56 @@
       </div>
     </div>
   </section>
+
   <footer
-    class="flex flex-col sm:flex-row lg:flex-row flex-wrap justify-evenly items-center bg-[#4a4a50] p-8 sm:p-10 lg:p-20 text-white gap-10">
+  class="flex flex-col sm:flex-row flex-wrap justify-around items-center bg-[#5A4F51] py-20 text-white">
 
-    <!-- 🐻 Logo Section -->
-    <div class="flex flex-col items-center md:items-start text-center md:text-left">
-      <div class="flex gap-6 mb-6">
-        <img class="h-16 w-16 rounded-full bg-white p-2"
-          src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="Bear Logo">
-        <img class="h-16 w-16 rounded-full bg-white p-2" src="./panda1.png" alt="Panda Logo">
-      </div>
-
-      <p class="text-white text-sm sm:text-base max-w-[300px]">
-        Bear Alert is developed by <span class="font-semibold">bearsinmind.org</span> & <span
-          class="font-semibold">baer.de</span>
-        to keep track of the many captive bears.
-      </p>
+  <!-- 🐻 Logo Section -->
+  <div class="flex flex-col items-center md:items-start text-center md:text-left">
+    <div class="flex gap-6 mb-6">
+      <img class="h-16 w-16 rounded-full bg-white p-2"
+        src="https://www.bearalert.org/static/Baer-aa42c231ae02c9ea11aa5397e0b14cd8.svg" alt="Bear Logo">
+      <img class="h-16 w-16 rounded-full bg-white p-2" src="./panda1.png" alt="Panda Logo">
     </div>
 
-    <!-- 📄 Links Section -->
-    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+    <p class="text-gray-300 text-sm sm:text-base max-w-[500px] md:max-w-[450px]">
+      Bear Alert is developed by bearsinmind.org & baer.de
+      to keep track of the many captive bears.
+    </p>
+  </div>
 
-      <ul class="flex flex-col">
-        <h1 class="font-semibold text-xl mb-1">Report a Bear</h1>
-        <li><a href="./about.html" class="p-1 font-semibold text-xl mb-1">About</a></li>
-        <li><a href="./contact.html" class="p-1 font-semibold text-xl mb-1">Contact</a></li>
-        <li><a href="./login.html" class="p-1 font-semibold text-xl mb-1">Login</a></li>
-      </ul>
-    </div>
+  <!-- 📄 Links Section -->
+  <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+    <ul class="flex flex-col ">
+      <h1 class="font-semibold text-md pb-3">Report a Bear</h1>
+      <h1 class="pb-3">
+        <li><a href="./about.html" class="font-semibold text-md">About</a></li>
+      </h1>
+      <h1 class="pb-3">
+        <li><a href="./contact.html" class="font-semibold text-md">Contact</a></li>
+      </h1>
+      <h1 class="pb-3">
+        <li><a href="./login.html" class="font-semibold text-md">Login</a></li>
+      </h1>
+    </ul>
+  </div>
 
   </footer>
-  <section class=" text-[#4a4a50] h-30 py-5">
-    <div class="flex flex-col md:flex-row justify-evenly items-center">
-      <div class="flex"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-          fill="#434343">
-          <path
-            d="M400-320h160q17 0 28.5-11.5T600-360v-80h-80v40h-80v-160h80v40h80v-80q0-17-11.5-28.5T560-640H400q-17 0-28.5 11.5T360-600v240q0 17 11.5 28.5T400-320Zm80 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-        </svg>
-        <h1>2025 Bear alert part of bearsinmind.org & baer.de <br> Webdesign:bureau Berg</h1>
-      </div>
-      <div class="pt-3"> Privacy statement | Terms and conditions </div>
-    </div>
-  </section>
-</body>
 
+<section class=" text-[#4a4a50] h-30 py-5">
+  <div class="flex flex-col md:flex-row justify-evenly px-25">
+    <div class="flex ">
+       <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="24px"
+        fill="#434343">
+        <path
+          d="M400-320h160q17 0 28.5-11.5T600-360v-80h-80v40h-80v-160h80v40h80v-80q0-17-11.5-28.5T560-640H400q-17 0-28.5 11.5T360-600v240q0 17 11.5 28.5T400-320Zm80 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+      </svg>
+      <h1 class="font-Montserrat, sans-serif; text-[16px]">2025 Bear alert part of bearsinmind.org & baer.de <br> Webdesign:bureau Berg</h1>
+    </div>
+    <div class=" font-Montserrat, sans-serif; text-[16px]"> Privacy statement | Terms and conditions </div>
+  </div>
+</section>
+
+</body>
 </html>
