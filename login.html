@@ -166,7 +166,7 @@
     </div>
   </section>
   <footer
-  class="flex flex-col sm:flex-row flex-wrap justify-around items-center mt-10 bg-[#5A4F51] py-20 text-white">
+  class="flex flex-row md:flex-row sm:flex-row flex-wrap justify-around items-center mt-10 bg-[#5A4F51] py-20 text-white">
 
   <!-- 🐻 Logo Section -->
   <div class="flex flex-col items-center md:items-start text-center md:text-left">
@@ -176,7 +176,7 @@
       <img class="h-16 w-16 rounded-full bg-white p-2" src="./panda1.png" alt="Panda Logo">
     </div>
 
-    <p class="text-gray-300 text-sm sm:text-base max-w-[500px] px-5 pb-3 lg:max-w-[480px]">
+    <p class="text-white opacity-65 leading-5 font-normal text-sm sm:text-base max-w-[500px] px-5 pb-3 lg:max-w-[480px]">
       Bear Alert is developed by bearsinmind.org & baer.de
       to keep track of the many captive bears.
     </p>
@@ -201,17 +201,27 @@
 
 </footer>
 
-<section class=" text-[#4a4a50] h-30 py-5">
-  <div class="flex flex-col md:flex-row justify-evenly px-25">
-    <div class="flex ">
-       <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="24px"
-        fill="#434343">
+<section class="text-[#4a4a50] py-5">
+  <div class="flex flex-col md:flex-row justify-around px-3 gap-4">
+
+    <!-- Left Side -->
+    <div class="flex flex-row gap-2  max-w-full">
+      <svg class="mt-1" xmlns="http://www.w3.org/2000/svg" height="15px"
+        viewBox="0 -960 960 960" width="24px" fill="#434343">
         <path
           d="M400-320h160q17 0 28.5-11.5T600-360v-80h-80v40h-80v-160h80v40h80v-80q0-17-11.5-28.5T560-640H400q-17 0-28.5 11.5T360-600v240q0 17 11.5 28.5T400-320Zm80 240q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
       </svg>
-      <h1 class="font-Montserrat, sans-serif; text-[16px]">2025 Bear alert part of bearsinmind.org & baer.de <br> Webdesign:bureau Berg</h1>
+      <h1 class="font-Montserrat text-[15px] max-w-full sm:max-w-full">
+        2025 Bear alert part of bearsinmind.org & baer.de <br>
+        Webdesign: bureau Berg
+      </h1>
     </div>
-    <div class=" font-Montserrat, sans-serif; text-[16px]"> Privacy statement | Terms and conditions </div>
+
+    <!-- Right Side -->
+    <div class="font-Montserrat px-10 text-[16px]">
+      Privacy statement | Terms and conditions
+    </div>
+
   </div>
 </section>
 </body>
